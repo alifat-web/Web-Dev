@@ -1,219 +1,174 @@
-        a {
-            text-decoration: none;
-        }
-        body {
-            font-family: Helvetica, Arial, sans-serif;
-            font-size: 12px;
-            line-height: 1.34;
-            background: #f0f2f5;
-            color: #1c1e21;
-            direction: ltr;
-            line-height: 1.34;
-            margin: 0;
-            padding: 0;
-            unicode-bidi: embed;
-        }
-        h2 {
-            display: block;
-            font-size: 1.5em;
-            margin-block-start: 0.83em;
-            margin-block-end: 0.83em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            font-weight: bold;
-            unicode-bidi: isolate;
-        }
-        div {
-            display: block;
-            unicode-bidi: isolate;
-        }
-        img {
-            overflow-clip-margin: content-box;
-            overflow: clip;
-        }
-        .fb_logo {
-            display: inline;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-            width: 320px;
-            height: 106px;
+body {
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #1c1e21;
+}
 
-            margin: 28px;
-            margin-bottom: -28px;
+.container {
+    flex: 1;
+    display: flex;
+    width: 50%;
+    max-width: 1000px;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
 
-        }
-        .fb_logou {
-            height: 106px;
-            margin: -28px;
-            display: block;
-            
-        }
-        .fb_title {
-            font-size: 24px;
-            line-height: 28px;
+.left {
+    flex: 1;
+}
 
-            color: rgb(28, 30, 33);
-            font-weight: 400;
+.left h1 {
+    color: #1877f2;
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
 
-            padding-bottom: 20px;
-            width: auto;
-            letter-spacing: normal;
-            display: inline-block;
-            font-family: 'Inter', Arial, sans-serif;
-            padding: 0 0 20px;
-            margin: 0;
-        }
-        .fblogo2 {
-            padding: 112px 0 16px;
+.left p {
+    font-size: 22px;
+    color: #1c1e21;
+}
 
-        }
-        .fblogo {
-            box-sizing: border-box;
-            margin-right: 0;
-            padding-right: 32px;
-            width: 500px;
+.right {
+    width: 100%;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+}
 
-            vertical-align: center;
-            display: inline-block;
-        }
-        .fbbox {
-            height: 496px;
-            margin: 0 auto;
-            max-width: 980px;
+.right-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
 
-            padding: 20px 0;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            padding-top: 72px;
+.right input {
+    padding: 14px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
 
-        }
-       .inputtext_0_1, .inputtext_0_2 {
-            font-size: 17px;
-            width: 364px;
+.login {
+    background-color: #1877f2;
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+}
 
-            box-sizing: border-box;
-            border-radius: 6px;
-            padding: 14px 16px;
-            height: 52px;
-            line-height: 17px;
-            
-            border: 1px solid #dddfe2;
-            margin: 0;
-            vertical-align: middle;
-       }
-         .email, .password {
-            padding: 6px 0;
-            margin: auto;
-            font-size: 17px;
-            width: 364px;
-         }
-         .fb_form {
-            display: inline-block;
-            vertical-align: top;
-            box-sizing: border-box;
-            margin-left: 0;
-            padding-left: 32px;
-            width: 396px;
-         }
-         .fb_form2 {
-            text-align: center;
-            padding-bottom: 24px;
-            padding-top: 10px;
-            height: 456px;
-            width: 396px;
-        }
-        .fb_form3 {
-            box-shadow: 0 2px 4px #0000001a, 0 8px 16px #0000001a;
-            box-sizing: border-box;
-            margin: 40px 0 0;
-            padding: 20px 0 28px;
-            width: 396px;
-            background-color: #fff;
-            border-radius: 8px;
-        }
-        .fblog112 {
-            background-color: #1877f2;
-            border: none;
-            border-radius: 6px;
+.right a {
+    text-align: center;
+    margin: 12px 0;
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 14px;
+}
+.right a:hover {
+    text-decoration: underline;
+}
 
-            font-size: 20px;
-            font-weight: 700;
-            line-height: 48px;
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-top: 1px solid #ddd;
+}
 
-            height: 48px;
-            width: 364px;
+.signup {
+    background-color: #42b72a;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    align-self: center;
+    transition: background-color 0.3s ease;
+}
 
-            padding: 0 16px;
-            margin: 6px 0;
+.signup:hover {
+    background-color: #338822;
+}
 
-            color: #fff;
-            cursor: pointer;
+.create-page {
+    font-size: 12px;
+    color: #1c1e21;
+    text-align: center;
+    max-width: 360px;
+}
 
-            box-sizing: border-box;
-        }
-        .fblog112:hover {
-            background-color: #166fe5;
-        }
-        .fblog112:active {
-            background-color: #154ec1;
-        }
+.footer {
+    width: 100%;
+    background: #fff;
+    margin-top: auto;
+    padding: 20px 0 28px;
+    font-size: 12px;
+    color: #8a8d91;
+}
 
-        .login {
-            padding: 12px 0 2px;
-        }
-        .forgotten_password {
-            font-size: 14px;
-            padding: 12px 0 16px;
-        }
-        #fbline {
-            border-top: 1px solid #dadde1;
-            margin: 16px auto;
-            width: 280px;
-        }
-        .create_new_acc a {
-            display: inline-block;
-            background-color: #42b72a;
-            color: #fff;
-            padding: 0 16px;
-            line-height: 48px;
-            border-radius: 6px;
-            font-size: 17px;
-            font-weight: 700;
-        }
+.footer-languages,
+.footer-links {
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 12px;
+    padding: 0 20px;
+}
 
-        #reg_page_msg {
-            margin-top: 28px;
-            text-align: center;
-            font-size: 14px;
-            color: #1c1e21;
-        }
+.footer-languages {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 8px;
+}
 
-        #reg_page_msg a {
-            color: #1c1e21;
-            font-weight: 600;
-            text-decoration: none;
-        }
+.footer a {
+    color: #8a8d91;
+    text-decoration: none;
+}
 
-        #reg_page_msg a:hover {
-            text-decoration: underline;
-        }
+.footer a:hover {
+    text-decoration: underline;
+}
 
-        .forgotten_password a {
-            color: #1877f2;
-        }
-        .forgotten_password a:hover {
-            text-decoration: underline;
-        }
+.footer-languages span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 20px;
+    border: 1px solid #ccd0d5;
+    border-radius: 2px;
+    background: #f5f6f7;
+    color: #4b4f56;
+    font-size: 14px;
+}
 
-        .inputtext_0_1:focus,
-        .inputtext_0_2:focus {
-            outline: none;
-            border-color: #1877f2;
-            box-shadow: 0 0 0 2px #e7f3ff;
-        }
-
-        .fblog112:focus {
-            outline: none;
-            box-shadow: 0 0 0 2px #e7f3ff;
-        }
+.footer-meta {
+    max-width: 980px;
+    margin: 10px auto 0;
+    padding: 0 20px;
+}
