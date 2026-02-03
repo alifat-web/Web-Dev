@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 98vh;
+    background: #0f1c24;
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                 Roboto, Helvetica, Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.auth {
+    width: 100%;
+    max-width: 450px;
+    padding: 10px;
+}
+
+.instagram-logo {
+    display: block;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.field {
+    position: relative;
+    width: 100%;
+}
+
+.field input {
+    width: 100%;
+    height: 44px;
+    padding: 16px 16px 6px;
+    background: transparent;
+    border: 1px solid #6c7a86;
+    border-radius: 14px;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.field input:focus {
+    outline: none;
+}
+
+.field label {
+    position: absolute;
+    inset-inline-start: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: calc(100% - 32px);
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #b8c6d1;
+    font-size: 15px;
+    pointer-events: none;
+    transition: transform 0.2s ease, font-size 0.2s ease;
+}   
+
+
+
+.field input:focus + label,
+.field input:not(:placeholder-shown) + label {
+    transform: translateY(-120%);
+    font-size: 10px;
+}
+
+.btn {
+    width: 100%;
+    height: 44px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    background: transparent;
+    transition: background 0.2s ease;
+}
+
+
+.btn-login {
+    background: #1b74e4;
+    border: none;
+    color: #fff;
+}
+
+.btn-login:hover {
+    background: #2f86ff;
+}
+
+.btn-facebook {
+    border: 1px solid #6c7a86;
+    color: #ffffff;
+}
+
+.btn-facebook:hover {
+    background: rgba(255,255,255,0.08);
+}
+
+.btn-forgot {
+    border: 1px solid #6c7a8600;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.btn-forgot:hover {
+    background: rgba(255,255,255,0.08);
+}
+
+.btn-signup {
+    border: 1px solid #1b74e4;
+    color: #1b74e4;
+}
+
+.btn-signup:hover {
+    background: rgba(255,255,255,0.08);
+}
+
+
+.meta {
+    margin-top: 28px;
+    text-align: center;
+    opacity: 0.6;
+}
+
+.meta-logo {
+    width: 80px;
+}
+
+.topbar {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        180deg,
+        #0b141a 0%,
+        #0f1c24 100%
+    );
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+.topbar-logo {
+    width: 48px;
+    height: 48px;
+}
+
+.topbar-logo svg {
+    width: 100%;
+}
