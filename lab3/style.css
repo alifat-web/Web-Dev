@@ -97,3 +97,23 @@ body {
     border-radius:4px;
     color:white;
 }
+.btnadd {
+    background-color:rgba(5, 95, 197, 0.904);
+    border:none;
+    border-radius:4px;
+    color:white;
+}
+#show-all {
+    background-color:rgba(5, 95, 197, 0.904);
+    border:none;
+    border-radius:4px;
+    color:white;
+}
+
+#show-completed {
+    background-color:rgba(5, 95, 197, 0.904);
+    border:none;
+    margin: 5px;
+    border-radius:4px;
+    color:white;
+}
