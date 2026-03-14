@@ -1,0 +1,188 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e7e7e7;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.06);
+    transition: transform 160ms ease, box-shadow 160ms ease;
+    padding: 20px;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.10);
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: 220px;
+    margin: 0;
+    padding: 0;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: #fafafa;
+    display: block;
+}
+
+.thumbs {
+    display: flex;
+    gap: 8px;
+    padding: 10px 0; 
+    overflow-x: auto;
+}
+
+.thumb {
+    border: 1px solid #e6e6e6;
+    background: #fff;
+    border-radius: 12px;
+    padding: 2px;
+    cursor: pointer;
+    min-width: 60px;
+}
+
+.thumb img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    display: block;
+}
+
+.thumb.active {
+    border-color: #111;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-top: 10px;
+}
+
+.title {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+}
+
+.title a {
+    text-decoration: none;
+    color: #111;
+}
+
+.desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 15px;
+    flex-grow: 1;
+    font-size: 14px;
+    color: #444;
+}
+
+.meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.badge {
+    font-size: 14px;
+    border: 1px solid #e6e6e6;
+    padding: 3px 8px;
+    border-radius: 999px;
+    background: #fff;
+}
+
+.stars .star {
+    opacity: 0.25;
+    font-size: 17px;
+}
+
+.stars .star.filled {
+    opacity: 1;
+}
+
+.likes {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.actions button, .actions .kaspi {
+    border: 1px solid #e6e6e6;
+    background: #fff;
+    padding: 8px 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 13px;
+    text-decoration: none;
+    transition: background-color 160ms ease, color 160ms ease;
+}
+
+.actions button:hover, .actions .kaspi:hover {
+    border-color: #111;
+}
+
+.actions .WhatsApp {
+    background-color: #25D366;
+    color: white;
+}
+
+.actions .Telegram {
+    background-color: #0088cc;
+    color: white;
+}
+
+.actions .kaspi {
+    background-color: #ff3b30;
+    color: white;
+}
+
+.other-actions {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.other-actions button {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    background: #f9f9f9;
+    transition: background-color 160ms ease;
+}
+
+.other-actions button:hover {
+    background-color: #f0f0f0;
+}
