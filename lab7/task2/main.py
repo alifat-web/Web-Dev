@@ -1,16 +1,14 @@
-from models import Car, Motorcycle
+from models import Car, Motorcycle, Bus
 
-def main():
-    my_car = Car("Toyota", "Camry", 2022, 4)
-    my_bike = Motorcycle("Harley-Davidson", "Iron 883", 2021, False)
+my_car = Car("Toyota", "Camry", 2022, 4)
+my_bike = Motorcycle("Harley", "883", 2021, False)
+my_bus = Bus("Mercedes", "Sprinter", 2015, 20)
 
-    vehicles = [my_car, my_bike]
+print(my_car.brand, my_car.model)
+print(my_car.start_engine())
 
-    print("--- Информация о транспорте ---")
-    for v in vehicles:
-        print(v)
-        print(v.start_engine()) 
-        print("-" * 30)
+print(my_bike.brand, my_bike.model)
+print(my_bike.start_engine())
 
-if __name__ == "__main__":
-    main()
+print(my_bus.brand, my_bus.model)
+print(my_bus.start_engine())
