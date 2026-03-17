@@ -19,7 +19,7 @@ class Car(Vehicle):
         self.doors = doors
 
     def start_engine(self):
-        return f"Машина {self.model} тихо заводится ключом."
+        return f"Машина {self.model} заводится ключом."
 
 class Motorcycle(Vehicle):
     def __init__(self, brand, model, year, has_sidecar):
@@ -27,4 +27,4 @@ class Motorcycle(Vehicle):
         self.has_sidecar = has_sidecar
 
     def start_engine(self):
-        return f"Мотоцикл {self.model} громко рычит: РРРРРА!"
+        return f"Мотоцикл {self.model} заведен!"
